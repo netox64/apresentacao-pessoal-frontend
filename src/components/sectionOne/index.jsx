@@ -1,4 +1,6 @@
+import { Counter } from "../contador";
 import { Graph } from "../graph";
+import { Habilidades } from "../habilidades";
 
 export const SectionOne = () => {
 
@@ -17,23 +19,19 @@ export const SectionOne = () => {
           envolvem matemática aplicada, álgebra linear , otimização etc. Aprendo rápido, sou dedicado.</p>
 
         <p className="text-2xl font-extralight text-blue-400 mt-2">Habilidades:
-          <ul>
-            <li className="text-sm text-gray-700">Criatividade.</li>
-            <li className="text-sm text-gray-700">Organização.</li>
-            <li className="text-sm text-gray-700">Vasto conhecimento em bibliotecas do mundo Js, incluindo yup, recharts, jsPdf, hookform e tals.</li>
-            <li className="text-sm text-gray-700">Comunicação mediana.</li>
-          </ul>
+          <Habilidades />
         </p>
 
-        <div className="mt-6 flex flex-col items-center md:items-start justify-center ">
-          <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+        <div className="flex flex-col items-center md:items-start justify-center mt-5">
+          <a className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition duration-300" href="https://www.linkedin.com/in/clodoaldo-neto/" target="_blank">
             Saiba mais
-          </button>
+          </a>
         </div>
       </div>
 
-      <div className="row-span-1  flex flex-col items-center justify-center">
+      <div className="row-span-1 flex flex-col items-center justify-center">
         <Graph />
+        <Counter />
       </div>
 
     </section>
